@@ -1,4 +1,101 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Work Sans", system-ui;
+}
+
+header {
+  background: #ff900e1a;
+  padding: 2rem 10rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #131313;
+}
+nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 55rem;
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+
+.banner-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
+}
+.banner-description {
+  text-align: center;
+  color: #727272;
+}
+
+.primary-btn {
+  font-size: 1.2rem;
+  color: #fff;
+  background: #ff900e;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* media query for mobile  */
+@media (max-width: 576px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* media query for medium Devices */
+
+@media (max-width: 992px) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
 }
